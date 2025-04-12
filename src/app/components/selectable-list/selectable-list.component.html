@@ -1,5 +1,7 @@
 <ul>
-    <li (click)="onSelect.emit(item)" *ngFor=" let item of items ">
-        <p>{{item}}</p>
+    <p>Lista del hijo: {{items}}</p>
+    <li class="d-flex justify-content-start align-items-center" *ngFor=" let item of items; let i = index ">
+        <p (click)="onSelect.emit(item)">{{item}}</p> 
+        <button (click)="removeItem(i)" class=" btn btn-danger ms-4" type="button">X</button>
     </li>
 </ul>

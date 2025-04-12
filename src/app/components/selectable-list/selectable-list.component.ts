@@ -11,4 +11,13 @@ export class SelectableListComponent {
 
   @Output() 
   onSelect = new EventEmitter();
+
+  @Output()
+  itemsChange = new EventEmitter();
+
+  removeItem(index: number): void{
+    //this.items = this.items.filter((_ , i) => i !== index);
+
+    this.itemsChange.emit(this.items.filter((_ , i) => i !== index))
+  }
 }

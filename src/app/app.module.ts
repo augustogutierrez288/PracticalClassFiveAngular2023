@@ -10,9 +10,9 @@ import { UsersModule} from './modules/users/users.module';
     AppComponent
   ],
   imports: [
-    UsersModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

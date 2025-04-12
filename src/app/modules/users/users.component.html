@@ -1,4 +1,3 @@
-<p>Alumnos</p>
-<app-selectable-list [items]="users" (onSelect)="onSelectUser($event)"></app-selectable-list>
-<p>Cursos:</p>
-<app-selectable-list [items]="cursos" (onSelect)="onSelectUser($event)"></app-selectable-list>
+<p class="h5">Alumnos</p>
+<app-selectable-list [(items)]="users" (onSelect)="onSelectItem($event)"></app-selectable-list>
+<p>Lista del padre: {{users}}</p>

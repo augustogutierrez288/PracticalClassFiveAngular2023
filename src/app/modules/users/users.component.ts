@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, viewChild } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -10,7 +10,7 @@ export class UsersComponent {
   users: string[] = ["Alan", "Lorenzo", "Mirco", "Mateo", "Lio"];
   cursos: string[] = ["Angular", "React.js", "Javascript"]
 
-  onSelectUser(user: string): void{
-    console.log("Se selecciono un items " + user)
+  onSelectItem(item: string): void{
+    console.log("Se selecciono un items " + item)
   }
 }
